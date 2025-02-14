@@ -12,7 +12,7 @@
     <h2>Dog Adoption Application</h2>
     <form action="submit_application.php" method="post">
 		<div>
-		<label for="name">Name:</label>
+		<label>Name:</label>
         <input type="text" id="name" name="name" placeholder="Name" required>
 		</div>     
         <div><label for="phone">Phone Number:</label>
@@ -25,7 +25,7 @@
         <input type="text" id="address" name="address" placeholder="Address" required>
         </div>
         <div class="checkbox-container">
-            <input type="checkbox" id="lived_with_dog" name="lived_with_dog" value="Have you ever lived with a Dog before?">
+            <input type="checkbox" id="checkbox" name="lived_with_dog" value="Have you ever lived with a Dog before?">
             <label for="lived_with_dog">Have you ever lived with a Dog before?</label>
         </div>
 <div>
@@ -33,7 +33,7 @@
 
         <label for="breeds">Please select your preferred breeds:</label>
 
-	<select id="breeds" name="breeds" multiple required>
+	<select id= "multiSelect" name="breeds" multiple required>
             <option value="Labrador">Labrador</option>
             <option value="Golden Retriever">Golden Retriever</option>
             <option value="German Shepherd">German Shepherd</option>
@@ -42,7 +42,7 @@
         </select>
 </div>
 		
-        <button type="submit">Submit</button>
+        <button type="submit" id= "submit" >Submit</button>
     </form>
 </div>
 
